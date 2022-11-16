@@ -20,6 +20,27 @@ def postOrderTraverse(node, node_vals = []):
         return node_vals
 
 
+# def findSuccessor(tree, node):
+#     # Write your code here.
+#     inorder_vals = []
+#     inorderhelper(tree, node, inorder_vals)
+#     # print("outside")
+#     # print(inorder_vals[-1])
+#     return inorder_vals
+#     # return inorder_vals
+
+# def inorderhelper(tree, node, inorder_vals):
+#     if tree is not None:
+#         # print(tree.value)
+#         # print(tree.value)
+#         inorderhelper(tree.left, node, inorder_vals)
+#         current_val = tree.value
+#         inorder_vals.append(current_val)
+#         print(inorder_vals)
+        
+#         inorderhelper(tree.right, node, inorder_vals)
+
+
 class BinaryTree:
     def __init__(self, value):
         self.value = value
@@ -45,3 +66,5 @@ node15.right = node22
 print(inOrderTraverse(node10))
 print(preOrderTraverse(node10))
 print(postOrderTraverse(node10))
+
+# print(findSuccessor(node10, 1))

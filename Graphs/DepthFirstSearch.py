@@ -14,12 +14,12 @@ class Node:
 # O(v + e) time - how many children node coming out 
 # O(V) space
 visited_arr = []
-def dfs(node, value):
+def dfs(node):
     # if node not in visited_arr:
     print(node)
-    visited_arr.append(node)
+    visited_arr.append(node.name)
     for children in node.adjacent_nodes:
-        dfs(children, value)
+        dfs(children)
     return visited_arr
 
 
@@ -63,5 +63,6 @@ if __name__ == "__main__":
     node10.adjacent_nodes = []
     node11.adjacent_nodes = []
   
-    print(dfs(node, "4"))
+    print(node.name)
+    print(dfs(node))
   
